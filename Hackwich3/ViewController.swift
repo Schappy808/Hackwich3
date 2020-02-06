@@ -30,4 +30,14 @@ class ViewController: UIViewController {
                 self.view.backgroundColor = UIColor.blue
         }
     }
+    @IBAction func MagicButtonPresses(_ sender: Any)
+    {
+        if secondString == "The background color will turn red"
+        {
+            self.view.backgroundColor = UIColor.red
+        }
+        else
+        {
+            self.view.backgroundColor = UIColor.green}
+}
 }
