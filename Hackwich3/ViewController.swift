@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     var firstString = "The background color will turn to blue"
     var secondString = "The background color will turn to green"
     
+    @IBOutlet weak var RedLabel: UILabel!
+    
+    @IBOutlet weak var GreenLabel: UILabel!
+    
+    @IBOutlet weak var BlueLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,8 +27,15 @@ class ViewController: UIViewController {
     @IBAction func ChangeColorButtonPressed(_ sender: Any)
     {
         if firstString == "The background color will turn red"
+            
     {
     self.view.backgroundColor = UIColor.red
+        //set redLabel text to "red"
+        //set greenLabel text to "green"
+        //set blueLabel text to "blue"
+        self.RedLabel.text="Red"
+        self.GreenLabel.text="Green"
+        self.BlueLabel.text="Blue"
     }
         else
     {
